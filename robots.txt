@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://corerevivetech.co.za/sitemap.xml
