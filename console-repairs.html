@@ -27,6 +27,8 @@ section{padding:74px 0}.section-head{text-align:center;max-width:760px;margin:0 
 footer{padding:26px 0;border-top:1px solid var(--line);background:#070b13;color:#8392a7;font-size:12px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot strong{color:#d9e8f8}.float{position:fixed;right:20px;bottom:20px;z-index:20;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#20c875;color:#06150d;font-size:25px;box-shadow:0 10px 30px #0008}
 @media(max-width:850px){.hero-grid,.courierbox{grid-template-columns:1fr}.heroimg{height:320px}.faults{grid-template-columns:repeat(2,1fr)}.modelgrid{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.gallerygrid{grid-template-columns:1fr}.gallery img{height:230px}.wrap{width:calc(100% - 30px)}.nav{height:65px}.navlinks{gap:12px;font-size:12px}.nav .btn{display:none}.hero{padding:48px 0}.hero-grid{gap:26px}h1{letter-spacing:-1.5px}.hero p{font-size:16px}.heroimg{height:235px}.trustrow{grid-template-columns:1fr}.faults,.steps,.warrantygrid{grid-template-columns:1fr}.courierbox{padding:22px}.contactbox{padding:30px 19px}section{padding:58px 0}}
+
+.brand{display:flex;align-items:center;flex:0 0 auto}.brand-art{display:block;width:clamp(190px,19vw,245px);height:auto;max-height:66px}.footer-brand{width:210px;max-width:100%;margin-bottom:12px}.footer-brand .brand-art{width:100%;max-height:none}@media(max-width:620px){.brand-art{width:174px;max-height:54px}.footer-brand{width:190px}}
 </style>
 <script type="application/ld+json">
 {
@@ -56,7 +58,17 @@ footer{padding:26px 0;border-top:1px solid var(--line);background:#070b13;color:
 </head>
 <body>
 <header><div class="wrap nav">
- <a class="brand" href="index.html"><span class="logo">CR</span><span>CORE<span style="color:#55d9ef">REVIVE</span><small>TECH REPAIRS</small></span></a>
+ <a class="brand" href="index.html" aria-label="CoreRevive Tech Repairs home"><svg class="brand-art" viewBox="0 0 390 116" role="img" aria-label="CoreRevive Tech Repairs logo" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(4 4)" fill="none" stroke="#12b9f2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<rect x="4" y="4" width="104" height="104" rx="17"/>
+<path d="M18 40 L36 22 L48 22 M18 40 V70 L4 84 M48 22 V4 M18 70 L35 87 L49 101 M35 87 V108"/>
+<path d="M50 38 L68 20 H89 M50 38 V70 L68 88 H90 M68 20 H93 M90 88 H102"/>
+<circle cx="36" cy="22" r="4" fill="#12b9f2"/><circle cx="89" cy="20" r="4" fill="#12b9f2"/><circle cx="35" cy="87" r="4" fill="#12b9f2"/><circle cx="90" cy="88" r="4" fill="#12b9f2"/>
+<path d="M63 42 H82 Q99 42 99 56 Q99 69 82 69 H63 V89 M82 69 L99 89" stroke-width="7"/>
+</g>
+<text x="126" y="66" fill="#f7f9fc" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="700" letter-spacing="-1.5">CoreRevive</text>
+<text x="130" y="99" fill="#aeb9c7" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="7.5">TECH REPAIRS</text>
+</svg></a>
  <nav class="navlinks" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#services">All Services</a><a href="#faq">FAQs</a><a href="#contact">Contact</a></nav>
  <a class="btn" href="https://wa.me/27653089453?text=Hi%20CoreRevive%2C%20I%20would%20like%20to%20book%20a%20console%20assessment." target="_blank" rel="noopener">Book Assessment ↗</a>
 </div></header>
@@ -135,7 +147,17 @@ footer{padding:26px 0;border-top:1px solid var(--line);background:#070b13;color:
  <p style="margin-top:22px;font-size:13px">+27 65 308 9453 · corerevivetech@outlook.com · Gauteng, South Africa</p><p style="font-size:12px;color:#91a3b9">An assessment request is not confirmed until CoreRevive replies with the booking details.</p>
 </div></div></section>
 </main>
-<footer><div class="wrap foot"><div><strong>CORE<span style="color:#55d9ef">REVIVE</span> TECH REPAIRS</strong><br>Repair. Restore. Revive.<br><a href="https://wa.me/27653089453" target="_blank" rel="noopener">WhatsApp: +27 65 308 9453</a> · <a href="mailto:corerevivetech@outlook.com">Email CoreRevive</a></div><div>© <span id="year"></span> CoreRevive Tech Repairs. All rights reserved.</div><div><a href="index.html#services">All Services</a> · <a href="#faq">FAQs</a> · <a href="#contact">Book Assessment</a><br><span>Warranty applies to qualifying repairs and agreed terms.</span></div></div></footer>
+<footer><div class="wrap foot"><div><div class="footer-brand"><svg class="brand-art" viewBox="0 0 390 116" role="img" aria-label="CoreRevive Tech Repairs logo" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(4 4)" fill="none" stroke="#12b9f2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<rect x="4" y="4" width="104" height="104" rx="17"/>
+<path d="M18 40 L36 22 L48 22 M18 40 V70 L4 84 M48 22 V4 M18 70 L35 87 L49 101 M35 87 V108"/>
+<path d="M50 38 L68 20 H89 M50 38 V70 L68 88 H90 M68 20 H93 M90 88 H102"/>
+<circle cx="36" cy="22" r="4" fill="#12b9f2"/><circle cx="89" cy="20" r="4" fill="#12b9f2"/><circle cx="35" cy="87" r="4" fill="#12b9f2"/><circle cx="90" cy="88" r="4" fill="#12b9f2"/>
+<path d="M63 42 H82 Q99 42 99 56 Q99 69 82 69 H63 V89 M82 69 L99 89" stroke-width="7"/>
+</g>
+<text x="126" y="66" fill="#f7f9fc" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="700" letter-spacing="-1.5">CoreRevive</text>
+<text x="130" y="99" fill="#aeb9c7" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="7.5">TECH REPAIRS</text>
+</svg></div><br>Repair. Restore. Revive.<br><a href="https://wa.me/27653089453" target="_blank" rel="noopener">WhatsApp: +27 65 308 9453</a> · <a href="mailto:corerevivetech@outlook.com">Email CoreRevive</a></div><div>© <span id="year"></span> CoreRevive Tech Repairs. All rights reserved.</div><div><a href="index.html#services">All Services</a> · <a href="#faq">FAQs</a> · <a href="#contact">Book Assessment</a><br><span>Warranty applies to qualifying repairs and agreed terms.</span></div></div></footer>
 <a class="float" href="https://wa.me/27653089453" aria-label="Chat to CoreRevive on WhatsApp" target="_blank" rel="noopener">✆</a>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
