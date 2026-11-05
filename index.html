@@ -46,6 +46,13 @@ footer{padding:28px 0;border-top:1px solid var(--line);background:#070b13;color:
 
 /* Consistent CoreRevive logo lockup across every page */
 .brand{display:flex!important;align-items:center;flex:0 0 auto;text-decoration:none!important;white-space:nowrap}.brand-art{display:block;width:clamp(190px,19vw,245px);height:auto;max-height:66px}.brand span{color:inherit}@media(max-width:620px){.brand-art{width:174px;max-height:54px}}
+/* Correct original square CoreRevive logo: preserve its full aspect ratio and visibility */
+.nav{min-height:84px!important;height:auto!important}
+.brand{display:flex!important;align-items:center!important;flex:0 0 auto!important;overflow:visible!important}
+.brand-art{display:block!important;width:76px!important;height:76px!important;max-width:76px!important;max-height:76px!important;object-fit:contain!important;aspect-ratio:1/1!important;flex:0 0 76px!important}
+.footer-brand{width:auto!important;max-width:100%!important;margin-bottom:12px}
+.footer-brand .brand-art{width:140px!important;height:140px!important;max-width:140px!important;max-height:140px!important;flex:0 0 140px!important}
+@media(max-width:680px){.nav{min-height:72px!important;height:auto!important}.brand-art{width:64px!important;height:64px!important;max-width:64px!important;max-height:64px!important;flex-basis:64px!important}.footer-brand .brand-art{width:120px!important;height:120px!important;max-width:120px!important;max-height:120px!important;flex-basis:120px!important}}
 </style>
 <link rel="canonical" href="https://corerevivetech.co.za/">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -56,7 +63,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);background:#070b13;color:
 <body>
 <header>
  <div class="wrap nav">
-  <a class="brand" href="/" aria-label="CoreRevive Tech Repairs home"><img class="brand-art" src="/assets/corerevive-logo.png" alt="CoreRevive Tech Repairs logo" decoding="async"></a>
+  <a class="brand" href="/" aria-label="CoreRevive Tech Repairs home"><img class="brand-art" src="/assets/corerevive-logo.webp" alt="CoreRevive Tech Repairs logo" decoding="async"></a>
   <nav class="links" id="navlinks"><a href="#home">Home</a><a href="#services">Services</a><a href="#why">Why CoreRevive</a><a href="#process">How it works</a><a href="#contact">Contact</a></nav>
   <a class="navcta" href="#repair-request" target="_blank" rel="noopener">Request a Repair</a>
   <button class="menu" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
@@ -101,7 +108,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);background:#070b13;color:
 </div></section>
 <section class="contact" id="contact"><div class="wrap"><div class="contactbox"><div class="kicker">Let's get it working again</div><h2>Need a repair? <span class="gradient">Talk to us.</span></h2><p>Message CoreRevive with your device brand, model and the issue you are experiencing. We’ll help you with the next step.</p><div class="actions" style="justify-content:center"><a class="btn" href="#repair-request" target="_blank" rel="noopener">Request a Repair</a><a class="btn secondary" href="mailto:corerevivetech@outlook.com?subject=Repair%20Enquiry">Email Us</a></div><div class="contact-details"><span>☎ +27 65 308 9453</span><span>✉ corerevivetech@outlook.com</span><span>📍 Gauteng, South Africa</span></div></div></div></section>
 </main>
-<footer><div class="wrap foot"><div><div class="footer-brand"><img class="brand-art" src="/assets/corerevive-logo.png" alt="CoreRevive Tech Repairs logo" decoding="async"></div><br>Repair. Restore. Revive.</div><div>© <span id="year"></span> CoreRevive Tech Repairs. All rights reserved.</div><div>*Warranty applies to qualifying repairs and agreed terms. Data recovery and software outcomes are not guaranteed.</div></div></footer>
+<footer><div class="wrap foot"><div><div class="footer-brand"><img class="brand-art" src="/assets/corerevive-logo.webp" alt="CoreRevive Tech Repairs logo" decoding="async"></div><br>Repair. Restore. Revive.</div><div>© <span id="year"></span> CoreRevive Tech Repairs. All rights reserved.</div><div>*Warranty applies to qualifying repairs and agreed terms. Data recovery and software outcomes are not guaranteed.</div></div></footer>
 <a class="whatsapp-float" href="#repair-request" aria-label="Chat to CoreRevive on WhatsApp" target="_blank" rel="noopener">✆</a>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 

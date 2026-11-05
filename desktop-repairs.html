@@ -26,6 +26,13 @@ footer{padding:26px 0;border-top:1px solid var(--line);background:#070b13;color:
 
 /* Consistent CoreRevive logo lockup across every page */
 .brand{display:flex!important;align-items:center;flex:0 0 auto;text-decoration:none!important;white-space:nowrap}.brand-art{display:block;width:clamp(190px,19vw,245px);height:auto;max-height:66px}.brand span{color:inherit}@media(max-width:620px){.brand-art{width:174px;max-height:54px}}
+/* Correct original square CoreRevive logo: preserve its full aspect ratio and visibility */
+.nav{min-height:84px!important;height:auto!important}
+.brand{display:flex!important;align-items:center!important;flex:0 0 auto!important;overflow:visible!important}
+.brand-art{display:block!important;width:76px!important;height:76px!important;max-width:76px!important;max-height:76px!important;object-fit:contain!important;aspect-ratio:1/1!important;flex:0 0 76px!important}
+.footer-brand{width:auto!important;max-width:100%!important;margin-bottom:12px}
+.footer-brand .brand-art{width:140px!important;height:140px!important;max-width:140px!important;max-height:140px!important;flex:0 0 140px!important}
+@media(max-width:680px){.nav{min-height:72px!important;height:auto!important}.brand-art{width:64px!important;height:64px!important;max-width:64px!important;max-height:64px!important;flex-basis:64px!important}.footer-brand .brand-art{width:120px!important;height:120px!important;max-width:120px!important;max-height:120px!important;flex-basis:120px!important}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Service","name":"Desktop PC Repairs","serviceType":"Desktop computer diagnostics and repairs","provider":{"@type":"LocalBusiness","name":"CoreRevive Tech Repairs","telephone":"+27653089453","email":"corerevivetech@outlook.com","areaServed":{"@type":"AdministrativeArea","name":"Gauteng, South Africa"}},"areaServed":{"@type":"AdministrativeArea","name":"Gauteng, South Africa"},"description":"Desktop computer assessment and repair for power supply, motherboard, graphics card, storage, cooling and software faults."}
@@ -45,7 +52,7 @@ footer{padding:26px 0;border-top:1px solid var(--line);background:#070b13;color:
 </head>
 <body>
 <header><div class="wrap nav">
-<a class="brand" href="/" aria-label="CoreRevive Tech Repairs home"><img class="brand-art" src="/assets/corerevive-logo.png" alt="CoreRevive Tech Repairs logo" decoding="async"></a>
+<a class="brand" href="/" aria-label="CoreRevive Tech Repairs home"><img class="brand-art" src="/assets/corerevive-logo.webp" alt="CoreRevive Tech Repairs logo" decoding="async"></a>
 <nav class="navlinks" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#services">All Services</a><a href="#faq">FAQs</a><a href="#contact">Contact</a></nav>
 <a class="btn" href="#repair-request" target="_blank" rel="noopener">Request a Repair</a>
 </div></header>
@@ -97,7 +104,7 @@ footer{padding:26px 0;border-top:1px solid var(--line);background:#070b13;color:
 <div class="actions"><a class="btn" href="#repair-request" target="_blank" rel="noopener">Request a Repair</a><a class="btn secondary" href="mailto:corerevivetech@outlook.com?subject=Desktop%20Assessment%20Booking">Book by Email</a></div>
 <p style="margin-top:22px;font-size:13px">+27 65 308 9453 · corerevivetech@outlook.com · Gauteng, South Africa</p><p style="font-size:12px;color:#91a3b9">An assessment request is not confirmed until CoreRevive replies with the booking details.</p></div></div></section>
 </main>
-<footer><div class="wrap foot"><div><div class="footer-brand"><img class="brand-art" src="/assets/corerevive-logo.png" alt="CoreRevive Tech Repairs logo" decoding="async"></div><br>Repair. Restore. Revive.<br><a href="#repair-request" target="_blank" rel="noopener">Request a Repair</a> · <a href="mailto:corerevivetech@outlook.com">Email CoreRevive</a></div><div>© <span id="year"></span> CoreRevive Tech Repairs. All rights reserved.</div><div><a href="index.html#services">All Services</a> · <a href="#faq">FAQs</a> · <a href="#contact">Book Assessment</a><br><span>Warranty applies to qualifying repairs and agreed terms.</span></div></div></footer>
+<footer><div class="wrap foot"><div><div class="footer-brand"><img class="brand-art" src="/assets/corerevive-logo.webp" alt="CoreRevive Tech Repairs logo" decoding="async"></div><br>Repair. Restore. Revive.<br><a href="#repair-request" target="_blank" rel="noopener">Request a Repair</a> · <a href="mailto:corerevivetech@outlook.com">Email CoreRevive</a></div><div>© <span id="year"></span> CoreRevive Tech Repairs. All rights reserved.</div><div><a href="index.html#services">All Services</a> · <a href="#faq">FAQs</a> · <a href="#contact">Book Assessment</a><br><span>Warranty applies to qualifying repairs and agreed terms.</span></div></div></footer>
 <a class="float" href="#repair-request" aria-label="Chat to CoreRevive on WhatsApp" target="_blank" rel="noopener">✆</a>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 
