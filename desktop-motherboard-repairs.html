@@ -32,6 +32,34 @@ footer{padding:26px 0;border-top:1px solid var(--line);background:#070b13;color:
 {"@type":"Question","name":"Is repairing my motherboard worth it?","acceptedAnswer":{"@type":"Answer","text":"It depends on the motherboard, extent of damage, replacement options and overall value of the computer. We explain the findings and available options so you can decide before approving any work."}},
 {"@type":"Question","name":"Is there a warranty on motherboard repairs?","acceptedAnswer":{"@type":"Answer","text":"Qualifying repairs include a six-month warranty on parts and workmanship, subject to the applicable service and warranty terms."}}
 ]}</script>
+
+<style id="corerevive-brand-polish">
+/* CoreRevive visual identity: consistent logo, subtle circuit atmosphere and refined service cards */
+:root{--cr-glow:rgba(54,216,238,.14);--cr-blue-glow:rgba(39,141,255,.16)}
+html{scroll-padding-top:88px}
+body{isolation:isolate}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.17;background-image:linear-gradient(rgba(88,174,232,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(88,174,232,.055) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 78%)}
+header{box-shadow:0 8px 28px rgba(0,0,0,.16)}
+header .brand{min-width:0}
+header .brand-art{display:block;width:clamp(178px,19vw,238px);height:auto;max-height:62px;object-fit:contain}
+.navlinks a,.links a{transition:color .2s ease}
+.btn,.navcta{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.btn:hover,.navcta:hover{transform:translateY(-2px);filter:brightness(1.08);box-shadow:0 14px 34px rgba(22,143,255,.27)}
+.hero{position:relative;isolation:isolate;overflow:hidden}
+.hero:after{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;background:radial-gradient(circle at 8% 18%,var(--cr-glow),transparent 24%),radial-gradient(circle at 92% 82%,var(--cr-blue-glow),transparent 28%);opacity:.8}
+.hero-grid,.hero>.wrap{position:relative;z-index:1}
+.heroimg,.hero-photo,.gallery img,.image-row img{box-shadow:0 18px 48px rgba(0,0,0,.28);transition:transform .35s ease,filter .35s ease}
+.heroimg:hover,.hero-photo:hover,.gallery img:hover,.image-row img:hover{filter:brightness(1.06)}
+.fault,.model,.panel,.step,.warrantycard,.faq,.service,.promise-card,.contactbox,.cta,.hero-panel,.pack{box-shadow:0 12px 34px rgba(0,0,0,.12);transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+.fault:hover,.model:hover,.panel:hover,.step:hover,.warrantycard:hover,.faq:hover,.service:hover,.promise-card:hover{transform:translateY(-3px);border-color:rgba(54,216,238,.42);box-shadow:0 18px 42px rgba(0,0,0,.24),0 0 26px rgba(39,141,255,.07)}
+section .section-head h2{letter-spacing:-.7px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #36d8ee;outline-offset:4px;border-radius:6px}
+footer{position:relative}
+footer .brand-art,.footer-brand .brand-art{display:block;width:clamp(170px,18vw,220px);height:auto;max-height:58px;object-fit:contain}
+@media(max-width:620px){header .brand-art{width:166px;max-height:52px}html{scroll-padding-top:72px}.hero:after{opacity:.55}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
+
 </head><body>
 <header><div class="wrap nav"><a class="brand" href="/" aria-label="CoreRevive Tech Repairs home"><img class="brand-art" src="/assets/corerevive-horizontal.svg" alt="CoreRevive Tech Repairs logo" decoding="async"></a><nav class="navlinks" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#services">All Services</a><a href="#faq">FAQs</a><a href="#contact">Contact</a></nav><a class="btn" href="#repair-request" target="_blank" rel="noopener">Request a Repair</a></div></header>
 <main>
